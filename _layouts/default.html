@@ -1,14 +1,92 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-171847211-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "UA-171847211-1");
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Author -->
         <title>
-            {{ title }}{% if title != null %} | {% endif %}Jan Procházka
+            Jan Procházka{% if title != null %} | {% endif %}{{ title }}
         </title>
-        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="author" href="humans.txt" />
+        <!-- Author -->
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/assets/img/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/assets/img/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/img/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <!-- Favicon -->
+        <!-- Stylesheets -->
+        <link type="text/css" rel="stylesheet" href="/assets/css/roboto.css" />
+        <link
+            type="text/css"
+            rel="stylesheet"
+            href="/assets/css/material-icons.css"
+        />
+        <link
+            type="text/css"
+            rel="stylesheet"
+            href="/assets/css/materialize.min.css"
+            media="screen,projection"
+        />
+        <link
+            type="text/css"
+            rel="stylesheet"
+            href="/assets/css/highlight-light.css"
+        />
+        <link
+            type="text/css"
+            rel="stylesheet"
+            href="/assets/css/materialize-override.css"
+        />
+        <script type="text/js" src="/assets/js/materialize.min.js"></script>
+        <!-- Stylesheets -->
     </head>
     <body>
-        <div>
-            {{ content }}
-        </div>
+        <header class="page-header">
+            <div class="container">
+                {% include navbar.html %}
+            </div>
+        </header>
+        <main class="page-main">
+            <div class="container">
+                {{ content }}
+            </div>
+        </main>
+        <footer class="container page-footer light-blue lighten-5">
+            {% include footer.html %}
+        </footer>
     </body>
 </html>

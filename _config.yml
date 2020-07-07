@@ -26,6 +26,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: opfleyr
 github_username: jprochazk
+
+markdown: kramdown
+highlighter: rouge
 # Build settings
 # theme: minima
 # plugins:

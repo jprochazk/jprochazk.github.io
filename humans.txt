@@ -1,0 +1,11 @@
+/* TEAM */
+Programmer, Designer: Jan Procházka
+Site: honza.spacir@gmail.com
+Twitter: @opfleyr
+Location: Czechia
+
+/* SITE */
+Last update: 2020/07/07
+Standards: HTML5, ES6, CSS3
+Languages: HTML, Markdown, CSS, JavaScript, Liquid
+Software: Jekyll, Github Pages, Visual Studio Code
