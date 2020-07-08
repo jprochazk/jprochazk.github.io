@@ -101,25 +101,36 @@ span.post-link {
     margin-right: 10px;
 }
 
-a.dark-button {
+a.dark-icon {
+    height: 32px;
     border: none;
-    border-radius: 32px;
+    border-radius: 64px;
     background-color: rgb(0, 0, 0, 0);
     cursor: pointer;
     transition: all 0.3s;
 }
-a.dark-button:hover {
+a.dark-icon:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 2px 2px rgba(26, 26, 26, 0.678);
+    box-shadow: 0 0 6px 3px rgba(26, 26, 26, 0.678);
 }
-a.light-button {
+a.light-icon {
+    height: 32px;
     border: none;
-    border-radius: 32px;
+    border-radius: 64px;
     background-color: rgb(0, 0, 0, 0);
     cursor: pointer;
     transition: all 0.3s;
 }
-a.light-button:hover {
+a.light-icon:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.65);
+    box-shadow: 0 0 6px 3px rgba(255, 255, 255, 0.65);
+}
+
+div.navbar {
+    justify-content: space-evenly !important;
+}
+
+a.navbar-button {
+    margin-left: 10px;
+    margin-right: 10px;
 }

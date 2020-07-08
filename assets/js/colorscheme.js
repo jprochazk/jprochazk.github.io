@@ -108,26 +108,43 @@
             JSON.stringify({ value: "dark" });
         const mode = JSON.parse(mode_json);
 
-        const dbutton = document.querySelector(`a.dark-button`);
-        const lbutton = document.querySelector(`a.light-button`);
         if (mode.value === "light") {
-            lbutton.style.display = "none";
-            dbutton.style.display = "inherit";
+            for (const icon of document.querySelectorAll(`a.dark-icon`)) {
+                icon.style.display = "inherit";
+            }
+            for (const icon of document.querySelectorAll(`a.light-icon`)) {
+                icon.style.display = "none";
+            }
             set("light");
         } else {
-            lbutton.style.display = "inherit";
-            dbutton.style.display = "none";
+            for (const icon of document.querySelectorAll(`a.dark-icon`)) {
+                icon.style.display = "none";
+            }
+            for (const icon of document.querySelectorAll(`a.light-icon`)) {
+                icon.style.display = "inherit";
+            }
             set("dark");
         }
-        dbutton.addEventListener("click", (e) => {
-            lbutton.style.display = "inherit";
-            dbutton.style.display = "none";
-            set("dark");
-        });
-        lbutton.addEventListener("click", (e) => {
-            lbutton.style.display = "none";
-            dbutton.style.display = "inherit";
+
+        const lbutton = document.querySelector(`a.light-button`);
+        lbutton.addEventListener("click", () => {
+            for (const icon of document.querySelectorAll(`a.dark-icon`)) {
+                icon.style.display = "inherit";
+            }
+            for (const icon of document.querySelectorAll(`a.light-icon`)) {
+                icon.style.display = "none";
+            }
             set("light");
+        });
+        const dbutton = document.querySelector(`a.dark-button`);
+        dbutton.addEventListener("click", () => {
+            for (const icon of document.querySelectorAll(`a.dark-icon`)) {
+                icon.style.display = "none";
+            }
+            for (const icon of document.querySelectorAll(`a.light-icon`)) {
+                icon.style.display = "inherit";
+            }
+            set("dark");
         });
     }
 })();

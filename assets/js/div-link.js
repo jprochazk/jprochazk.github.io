@@ -6,7 +6,7 @@
             );
             if (!target_el) return;
             const target = target_el.dataset.target;
-            window.location.replace(target);
+            window.location.href = target;
         });
     }
 })();
