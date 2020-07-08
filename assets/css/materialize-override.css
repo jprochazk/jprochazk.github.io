@@ -39,6 +39,11 @@ html {
     background-color: var(--color-footer-bg);
 }
 
+.footer-copyright {
+    color: inherit !important;
+    background-color: inherit !important;
+}
+
 .logo {
     width: 32px;
     height: 32px;
