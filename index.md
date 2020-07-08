@@ -1,15 +1,14 @@
 ---
-layout: default
-title: Jan Procházka
+layout: home
 ---
 
-Hi. [some post]({% post_url 2020-07-07-welcome-to-jekyll %})
-
-
-{% highlight js linenos %}
-const test = document.createElement('canvas');
-
-for(const a of (()=>{ return [1,2,3] })()) {
-    console.log(a);
-}
-{% endhighlight %}
+<ul>
+  {% for post in site.posts %}
+    <li>
+        <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+        <p>
+        {{ post.excerpt | strip_html | truncate: 85, " ... " }}
+        </p>
+    </li>
+  {% endfor %}
+</ul>

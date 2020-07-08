@@ -1,3 +1,66 @@
+:root {
+    --color-light-primary: white;
+    --color-light-text: rgb(29, 29, 29);
+    --color-light-link: rgb(29, 29, 29);
+    --color-light-footer-bg: white;
+    --color-light-footer-text: rgb(29, 29, 29);
+    --color-dark-primary: #0e0e10;
+    --color-dark-text: rgb(238, 238, 238);
+    --color-dark-link: rgb(211, 138, 138);
+    --color-dark-footer-bg: #0e0e10;
+    --color-dark-footer-text: rgb(238, 238, 238);
+}
+
+:root {
+    --color-primary: var(--color-light-primary);
+    --color-text: var(--color-light-text);
+    --color-link: var(--color-light-link);
+    --color-footer-bg: var(--color-light-footer-bg);
+    --color-footer-text: var(--color-light-footer-text);
+}
+
+html {
+    color: var(--color-text);
+    background-color: var(--color-primary);
+}
+
 .page-header {
     padding-top: 30px !important;
+}
+
+.page-main {
+    min-height: 70vh !important;
+    margin: auto;
+    margin-top: 80px !important;
+}
+
+.page-footer {
+    color: var(--color-footer-text);
+    background-color: var(--color-footer-bg);
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+}
+@media only screen and (min-width: 666px) {
+    .logo {
+        width: 48px !important;
+        height: 48px !important;
+    }
+}
+@media only screen and (min-width: 999px) {
+    .logo {
+        width: 64px !important;
+        height: 64px !important;
+    }
+}
+
+.btn-flat {
+    color: var(--color-link) !important;
+}
+
+.pagination {
+    margin-top: 0 !important;
 }

@@ -1,0 +1,655 @@
+:root {
+    --color-dark-background: #0e0e10;
+    --color-dark-error: #a61717;
+    --color-dark-error-background: #e3d2d2;
+    --color-dark-literal: #d0d0d0;
+    --color-dark-name: #d0d0d0;
+    --color-dark-operator: #d0d0d0;
+    --color-dark-operator-word: #6ab825;
+    --color-dark-other: #d0d0d0;
+    --color-dark-punctuation: #d0d0d0;
+    --color-dark-comment: #999999;
+    --color-dark-comment-multiline: #999999;
+    --color-dark-comment-preproc: #cd2828;
+    --color-dark-comment-single: #999999;
+    --color-dark-comment-special: #e50808;
+    --color-dark-comment-special-background: #404040;
+    --color-dark-generic: #d0d0d0;
+    --color-dark-generic-deleted: #d22323;
+    --color-dark-generic-emph: #d0d0d0;
+    --color-dark-generic-error: #d22323;
+    --color-dark-generic-heading: #ffffff;
+    --color-dark-generic-inserted: #589819;
+    --color-dark-generic-inserted-border: #404040;
+    --color-dark-generic-output: #cccccc;
+    --color-dark-generic-prompt: #aaaaaa;
+    --color-dark-generic-strong: #d0d0d0;
+    --color-dark-generic-subheading: #ffffff;
+    --color-dark-generic-traceback: #d22323;
+    --color-dark-keyword: #6ab825;
+    --color-dark-keyword-constant: #6ab825;
+    --color-dark-keyword-declaration: #6ab825;
+    --color-dark-keyword-namespace: #6ab825;
+    --color-dark-keyword-pseudo: #6ab825;
+    --color-dark-keyword-reserved: #6ab825;
+    --color-dark-keyword-type: #6ab825;
+    --color-dark-name-attribute: #bbbbbb;
+    --color-dark-name-builtin: #24909d;
+    --color-dark-name-builtin-pseudo: #24909d;
+    --color-dark-name-class: #447fcf;
+    --color-dark-name-constant: #40ffff;
+    --color-dark-name-decorator: #ffa500;
+    --color-dark-name-entity: #d0d0d0;
+    --color-dark-name-exception: #bbbbbb;
+    --color-dark-name-function: #447fcf;
+    --color-dark-name-label: #d0d0d0;
+    --color-dark-name-namespace: #447fcf;
+    --color-dark-name-other: #d0d0d0;
+    --color-dark-name-property: #d0d0d0;
+    --color-dark-name-tag: #6ab825;
+    --color-dark-name-variable: #40ffff;
+    --color-dark-name-variable-class: #40ffff;
+    --color-dark-name-variable-global: #40ffff;
+    --color-dark-name-variable-instance: #40ffff;
+    --color-dark-text-whitespace: #666666;
+    --color-dark-literal-date: #d0d0d0;
+    --color-dark-literal-number: #3677a9;
+    --color-dark-literal-string: #ed9d13;
+    --color-dark-literal-number-float: #3677a9;
+    --color-dark-literal-number-hex: #3677a9;
+    --color-dark-literal-number-integer: #3677a9;
+    --color-dark-literal-number-oct: #3677a9;
+    --color-dark-literal-number-integer-long: #3677a9;
+    --color-dark-literal-string-backtick: #ed9d13;
+    --color-dark-literal-string-char: #ed9d13;
+    --color-dark-literal-string-doc: #ed9d13;
+    --color-dark-literal-string-double: #ed9d13;
+    --color-dark-literal-string-escape: #ed9d13;
+    --color-dark-literal-string-heredoc: #ed9d13;
+    --color-dark-literal-string-interpol: #ed9d13;
+    --color-dark-literal-string-other: #ffa500;
+    --color-dark-literal-string-regex: #ed9d13;
+    --color-dark-literal-string-single: #ed9d13;
+    --color-dark-literal-string-symbol: #ed9d13;
+}
+
+:root {
+    --color-light-background: #eeeeee;
+    --color-light-error: #aa0000;
+    --color-light-error-background: #ffaaaa;
+    --color-light-literal: #000000;
+    --color-light-name: #000000;
+    --color-light-operator: #555555;
+    --color-light-operator-word: #000000;
+    --color-light-other: #000000;
+    --color-light-punctuation: #000000;
+    --color-light-comment: #0099ff;
+    --color-light-comment-multiline: #0099ff;
+    --color-light-comment-preproc: #009999;
+    --color-light-comment-single: #0099ff;
+    --color-light-comment-special: #0099ff;
+    --color-light-comment-special-background: #520000;
+    --color-light-generic: #000000;
+    --color-light-generic-deleted: #ffcccc;
+    --color-light-generic-emph: #000000;
+    --color-light-generic-error: #ff0000;
+    --color-light-generic-heading: #003300;
+    --color-light-generic-inserted: #ccffcc;
+    --color-light-generic-inserted-border: #00cc00;
+    --color-light-generic-output: #aaaaaa;
+    --color-light-generic-prompt: #000099;
+    --color-light-generic-strong: #000000;
+    --color-light-generic-subheading: #003300;
+    --color-light-generic-traceback: #99cc66;
+    --color-light-keyword: #006699;
+    --color-light-keyword-constant: #006699;
+    --color-light-keyword-declaration: #006699;
+    --color-light-keyword-namespace: #006699;
+    --color-light-keyword-pseudo: #006699;
+    --color-light-keyword-reserved: #006699;
+    --color-light-keyword-type: #007788;
+    --color-light-name-attribute: #330099;
+    --color-light-name-builtin: #336666;
+    --color-light-name-builtin-pseudo: #336666;
+    --color-light-name-class: #00aa88;
+    --color-light-name-constant: #336600;
+    --color-light-name-decorator: #9999ff;
+    --color-light-name-entity: #999999;
+    --color-light-name-exception: #cc0000;
+    --color-light-name-function: #cc00ff;
+    --color-light-name-label: #9999ff;
+    --color-light-name-namespace: #00ccff;
+    --color-light-name-other: #000000;
+    --color-light-name-property: #000000;
+    --color-light-name-tag: #330099;
+    --color-light-name-variable: #003333;
+    --color-light-name-variable-class: #003333;
+    --color-light-name-variable-global: #003333;
+    --color-light-name-variable-instance: #003333;
+    --color-light-text-whitespace: #bbbbbb;
+    --color-light-literal-date: #000000;
+    --color-light-literal-number: #ff6600;
+    --color-light-literal-string: #cc3300;
+    --color-light-literal-number-float: #ff6600;
+    --color-light-literal-number-hex: #ff6600;
+    --color-light-literal-number-integer: #ff6600;
+    --color-light-literal-number-oct: #ff6600;
+    --color-light-literal-number-integer-long: #ff6600;
+    --color-light-literal-string-backtick: #cc3300;
+    --color-light-literal-string-char: #cc3300;
+    --color-light-literal-string-doc: #cc3300;
+    --color-light-literal-string-double: #cc3300;
+    --color-light-literal-string-escape: #cc3300;
+    --color-light-literal-string-heredoc: #cc3300;
+    --color-light-literal-string-interpol: #aa0000;
+    --color-light-literal-string-other: #cc3300;
+    --color-light-literal-string-regex: #33aaaa;
+    --color-light-literal-string-single: #cc3300;
+    --color-light-literal-string-symbol: #ffcc33;
+}
+
+:root {
+    --color-background: var(--color-dark-background);
+    --color-error: var(--color-dark-error);
+    --color-error-background: var(--color-dark-error-background);
+    --color-literal: var(--color-dark-literal);
+    --color-name: var(--color-dark-name);
+    --color-operator: var(--color-dark-operator);
+    --color-operator-word: var(--color-dark-operator-word);
+    --color-other: var(--color-dark-other);
+    --color-punctuation: var(--color-dark-punctuation);
+    --color-comment: var(--color-dark-comment);
+    --color-comment-multiline: var(--color-dark-comment-multiline);
+    --color-comment-preproc: var(--color-dark-comment-preproc);
+    --color-comment-single: var(--color-dark-comment-single);
+    --color-comment-special: var(--color-dark-comment-special);
+    --color-comment-special-background: var(
+        --color-dark-comment-special-background
+    );
+    --color-generic: var(--color-dark-generic);
+    --color-generic-deleted: var(--color-dark-generic-deleted);
+    --color-generic-emph: var(--color-dark-generic-emph);
+    --color-generic-error: var(--color-dark-generic-error);
+    --color-generic-heading: var(--color-dark-generic-heading);
+    --color-generic-inserted: var(--color-dark-generic-inserted);
+    --color-generic-inserted-border: var(--color-dark-generic-inserted-border);
+    --color-generic-output: var(--color-dark-generic-output);
+    --color-generic-prompt: var(--color-dark-generic-prompt);
+    --color-generic-strong: var(--color-dark-generic-strong);
+    --color-generic-subheading: var(--color-dark-generic-subheading);
+    --color-generic-traceback: var(--color-dark-generic-traceback);
+    --color-keyword: var(--color-dark-keyword);
+    --color-keyword-constant: var(--color-dark-keyword-constant);
+    --color-keyword-declaration: var(--color-dark-keyword-declaration);
+    --color-keyword-namespace: var(--color-dark-keyword-namespace);
+    --color-keyword-pseudo: var(--color-dark-keyword-pseudo);
+    --color-keyword-reserved: var(--color-dark-keyword-reserved);
+    --color-keyword-type: var(--color-dark-keyword-type);
+    --color-name-attribute: var(--color-dark-name-attribute);
+    --color-name-builtin: var(--color-dark-name-builtin);
+    --color-name-builtin-pseudo: var(--color-dark-name-builtin-pseudo);
+    --color-name-class: var(--color-dark-name-class);
+    --color-name-constant: var(--color-dark-name-constant);
+    --color-name-decorator: var(--color-dark-name-decorator);
+    --color-name-entity: var(--color-dark-name-entity);
+    --color-name-exception: var(--color-dark-name-exception);
+    --color-name-function: var(--color-dark-name-function);
+    --color-name-label: var(--color-dark-name-label);
+    --color-name-namespace: var(--color-dark-name-namespace);
+    --color-name-other: var(--color-dark-name-other);
+    --color-name-property: var(--color-dark-name-property);
+    --color-name-tag: var(--color-dark-name-tag);
+    --color-name-variable: var(--color-dark-name-variable);
+    --color-name-variable-class: var(--color-dark-name-variable-class);
+    --color-name-variable-global: var(--color-dark-name-variable-global);
+    --color-name-variable-instance: var(--color-dark-name-variable-instance);
+    --color-text-whitespace: var(--color-dark-text-whitespace);
+    --color-literal-date: var(--color-dark-literal-date);
+    --color-literal-number: var(--color-dark-literal-number);
+    --color-literal-string: var(--color-dark-literal-string);
+    --color-literal-number-float: var(--color-dark-literal-number-float);
+    --color-literal-number-hex: var(--color-dark-literal-number-hex);
+    --color-literal-number-integer: var(--color-dark-literal-number-integer);
+    --color-literal-number-oct: var(--color-dark-literal-number-oct);
+    --color-literal-number-integer-long: var(
+        --color-dark-literal-number-integer-long
+    );
+    --color-literal-string-backtick: var(--color-dark-literal-string-backtick);
+    --color-literal-string-char: var(--color-dark-literal-string-char);
+    --color-literal-string-doc: var(--color-dark-literal-string-doc);
+    --color-literal-string-double: var(--color-dark-literal-string-double);
+    --color-literal-string-escape: var(--color-dark-literal-string-escape);
+    --color-literal-string-heredoc: var(--color-dark-literal-string-heredoc);
+    --color-literal-string-interpol: var(--color-dark-literal-string-interpol);
+    --color-literal-string-other: var(--color-dark-literal-string-other);
+    --color-literal-string-regex: var(--color-dark-literal-string-regex);
+    --color-literal-string-single: var(--color-dark-literal-string-single);
+    --color-literal-string-symbol: var(--color-dark-literal-string-symbol);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-background: var(--color-light-background);
+        --color-error: var(--color-light-error);
+        --color-error-background: var(--color-light-error-background);
+        --color-literal: var(--color-light-literal);
+        --color-name: var(--color-light-name);
+        --color-operator: var(--color-light-operator);
+        --color-operator-word: var(--color-light-operator-word);
+        --color-other: var(--color-light-other);
+        --color-punctuation: var(--color-light-punctuation);
+        --color-comment: var(--color-light-comment);
+        --color-comment-multiline: var(--color-light-comment-multiline);
+        --color-comment-preproc: var(--color-light-comment-preproc);
+        --color-comment-single: var(--color-light-comment-single);
+        --color-comment-special: var(--color-light-comment-special);
+        --color-comment-special-background: var(
+            --color-light-comment-special-background
+        );
+        --color-generic: var(--color-light-generic);
+        --color-generic-deleted: var(--color-light-generic-deleted);
+        --color-generic-emph: var(--color-light-generic-emph);
+        --color-generic-error: var(--color-light-generic-error);
+        --color-generic-heading: var(--color-light-generic-heading);
+        --color-generic-inserted: var(--color-light-generic-inserted);
+        --color-generic-inserted-border: var(
+            --color-light-generic-inserted-border
+        );
+        --color-generic-output: var(--color-light-generic-output);
+        --color-generic-prompt: var(--color-light-generic-prompt);
+        --color-generic-strong: var(--color-light-generic-strong);
+        --color-generic-subheading: var(--color-light-generic-subheading);
+        --color-generic-traceback: var(--color-light-generic-traceback);
+        --color-keyword: var(--color-light-keyword);
+        --color-keyword-constant: var(--color-light-keyword-constant);
+        --color-keyword-declaration: var(--color-light-keyword-declaration);
+        --color-keyword-namespace: var(--color-light-keyword-namespace);
+        --color-keyword-pseudo: var(--color-light-keyword-pseudo);
+        --color-keyword-reserved: var(--color-light-keyword-reserved);
+        --color-keyword-type: var(--color-light-keyword-type);
+        --color-name-attribute: var(--color-light-name-attribute);
+        --color-name-builtin: var(--color-light-name-builtin);
+        --color-name-builtin-pseudo: var(--color-light-name-builtin-pseudo);
+        --color-name-class: var(--color-light-name-class);
+        --color-name-constant: var(--color-light-name-constant);
+        --color-name-decorator: var(--color-light-name-decorator);
+        --color-name-entity: var(--color-light-name-entity);
+        --color-name-exception: var(--color-light-name-exception);
+        --color-name-function: var(--color-light-name-function);
+        --color-name-label: var(--color-light-name-label);
+        --color-name-namespace: var(--color-light-name-namespace);
+        --color-name-other: var(--color-light-name-other);
+        --color-name-property: var(--color-light-name-property);
+        --color-name-tag: var(--color-light-name-tag);
+        --color-name-variable: var(--color-light-name-variable);
+        --color-name-variable-class: var(--color-light-name-variable-class);
+        --color-name-variable-global: var(--color-light-name-variable-global);
+        --color-name-variable-instance: var(
+            --color-light-name-variable-instance
+        );
+        --color-text-whitespace: var(--color-light-text-whitespace);
+        --color-literal-date: var(--color-light-literal-date);
+        --color-literal-number: var(--color-light-literal-number);
+        --color-literal-string: var(--color-light-literal-string);
+        --color-literal-number-float: var(--color-light-literal-number-float);
+        --color-literal-number-hex: var(--color-light-literal-number-hex);
+        --color-literal-number-integer: var(
+            --color-light-literal-number-integer
+        );
+        --color-literal-number-oct: var(--color-light-literal-number-oct);
+        --color-literal-number-integer-long: var(
+            --color-light-literal-number-integer-long
+        );
+        --color-literal-string-backtick: var(
+            --color-light-literal-string-backtick
+        );
+        --color-literal-string-char: var(--color-light-literal-string-char);
+        --color-literal-string-doc: var(--color-light-literal-string-doc);
+        --color-literal-string-double: var(--color-light-literal-string-double);
+        --color-literal-string-escape: var(--color-light-literal-string-escape);
+        --color-literal-string-heredoc: var(
+            --color-light-literal-string-heredoc
+        );
+        --color-literal-string-interpol: var(
+            --color-light-literal-string-interpol
+        );
+        --color-literal-string-other: var(--color-light-literal-string-other);
+        --color-literal-string-regex: var(--color-light-literal-string-regex);
+        --color-literal-string-single: var(--color-light-literal-string-single);
+        --color-literal-string-symbol: var(--color-light-literal-string-symbol);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: var(--color-dark-background);
+        --color-error: var(--color-dark-error);
+        --color-error-background: var(--color-dark-error-background);
+        --color-literal: var(--color-dark-literal);
+        --color-name: var(--color-dark-name);
+        --color-operator: var(--color-dark-operator);
+        --color-operator-word: var(--color-dark-operator-word);
+        --color-other: var(--color-dark-other);
+        --color-punctuation: var(--color-dark-punctuation);
+        --color-comment: var(--color-dark-comment);
+        --color-comment-multiline: var(--color-dark-comment-multiline);
+        --color-comment-preproc: var(--color-dark-comment-preproc);
+        --color-comment-single: var(--color-dark-comment-single);
+        --color-comment-special: var(--color-dark-comment-special);
+        --color-comment-special-background: var(
+            --color-dark-comment-special-background
+        );
+        --color-generic: var(--color-dark-generic);
+        --color-generic-deleted: var(--color-dark-generic-deleted);
+        --color-generic-emph: var(--color-dark-generic-emph);
+        --color-generic-error: var(--color-dark-generic-error);
+        --color-generic-heading: var(--color-dark-generic-heading);
+        --color-generic-inserted: var(--color-dark-generic-inserted);
+        --color-generic-inserted-border: var(
+            --color-dark-generic-inserted-border
+        );
+        --color-generic-output: var(--color-dark-generic-output);
+        --color-generic-prompt: var(--color-dark-generic-prompt);
+        --color-generic-strong: var(--color-dark-generic-strong);
+        --color-generic-subheading: var(--color-dark-generic-subheading);
+        --color-generic-traceback: var(--color-dark-generic-traceback);
+        --color-keyword: var(--color-dark-keyword);
+        --color-keyword-constant: var(--color-dark-keyword-constant);
+        --color-keyword-declaration: var(--color-dark-keyword-declaration);
+        --color-keyword-namespace: var(--color-dark-keyword-namespace);
+        --color-keyword-pseudo: var(--color-dark-keyword-pseudo);
+        --color-keyword-reserved: var(--color-dark-keyword-reserved);
+        --color-keyword-type: var(--color-dark-keyword-type);
+        --color-name-attribute: var(--color-dark-name-attribute);
+        --color-name-builtin: var(--color-dark-name-builtin);
+        --color-name-builtin-pseudo: var(--color-dark-name-builtin-pseudo);
+        --color-name-class: var(--color-dark-name-class);
+        --color-name-constant: var(--color-dark-name-constant);
+        --color-name-decorator: var(--color-dark-name-decorator);
+        --color-name-entity: var(--color-dark-name-entity);
+        --color-name-exception: var(--color-dark-name-exception);
+        --color-name-function: var(--color-dark-name-function);
+        --color-name-label: var(--color-dark-name-label);
+        --color-name-namespace: var(--color-dark-name-namespace);
+        --color-name-other: var(--color-dark-name-other);
+        --color-name-property: var(--color-dark-name-property);
+        --color-name-tag: var(--color-dark-name-tag);
+        --color-name-variable: var(--color-dark-name-variable);
+        --color-name-variable-class: var(--color-dark-name-variable-class);
+        --color-name-variable-global: var(--color-dark-name-variable-global);
+        --color-name-variable-instance: var(
+            --color-dark-name-variable-instance
+        );
+        --color-text-whitespace: var(--color-dark-text-whitespace);
+        --color-literal-date: var(--color-dark-literal-date);
+        --color-literal-number: var(--color-dark-literal-number);
+        --color-literal-string: var(--color-dark-literal-string);
+        --color-literal-number-float: var(--color-dark-literal-number-float);
+        --color-literal-number-hex: var(--color-dark-literal-number-hex);
+        --color-literal-number-integer: var(
+            --color-dark-literal-number-integer
+        );
+        --color-literal-number-oct: var(--color-dark-literal-number-oct);
+        --color-literal-number-integer-long: var(
+            --color-dark-literal-number-integer-long
+        );
+        --color-literal-string-backtick: var(
+            --color-dark-literal-string-backtick
+        );
+        --color-literal-string-char: var(--color-dark-literal-string-char);
+        --color-literal-string-doc: var(--color-dark-literal-string-doc);
+        --color-literal-string-double: var(--color-dark-literal-string-double);
+        --color-literal-string-escape: var(--color-dark-literal-string-escape);
+        --color-literal-string-heredoc: var(
+            --color-dark-literal-string-heredoc
+        );
+        --color-literal-string-interpol: var(
+            --color-dark-literal-string-interpol
+        );
+        --color-literal-string-other: var(--color-dark-literal-string-other);
+        --color-literal-string-regex: var(--color-dark-literal-string-regex);
+        --color-literal-string-single: var(--color-dark-literal-string-single);
+        --color-literal-string-symbol: var(--color-dark-literal-string-symbol);
+    }
+}
+
+.highlight .c {
+    color: var(--color-comment);
+    font-style: italic;
+} /* Comment */
+.highlight .err {
+    color: var(--color-error);
+    background-color: var(--color-error);
+} /* Error */
+.highlight .g {
+    color: var(--color-generic);
+} /* Generic */
+.highlight .k {
+    color: var(--color-keyword);
+    font-weight: bold;
+} /* Keyword */
+.highlight .l {
+    color: var(--color-literal);
+} /* Literal */
+.highlight .n {
+    color: var(--color-name);
+} /* Name */
+.highlight .o {
+    color: var(--color-operator);
+} /* Operator */
+.highlight .x {
+    color: var(--color-operator);
+} /* Other */
+.highlight .p {
+    color: var(--color-punctuation);
+} /* Punctuation */
+.highlight .cm {
+    color: var(--color-comment-multiline);
+    font-style: italic;
+} /* Comment.Multiline */
+.highlight .cp {
+    color: var(--color-comment-preproc);
+    font-weight: bold;
+} /* Comment.Preproc */
+.highlight .c1 {
+    color: var(--color-comment-single);
+    font-style: italic;
+} /* Comment.Single */
+.highlight .cs {
+    color: var(--color-comment-special);
+    font-weight: bold;
+    background-color: var(--color-comment-special-background);
+} /* Comment.Special */
+.highlight .gd {
+    color: var(--color-generic-deleted);
+} /* Generic.Deleted */
+.highlight .ge {
+    color: var(--color-generic-emph);
+    font-style: italic;
+} /* Generic.Emph */
+.highlight .gr {
+    color: var(--color-generic-error);
+} /* Generic.Error */
+.highlight .gh {
+    color: var(--color-generic-heading);
+    font-weight: bold;
+} /* Generic.Heading */
+.highlight .gi {
+    color: var(--color-generic-inserted);
+} /* Generic.Inserted */
+.highlight .go {
+    color: var(--color-generic-output);
+} /* Generic.Output */
+.highlight .gp {
+    color: var(--color-generic-prompt);
+} /* Generic.Prompt */
+.highlight .gs {
+    color: var(--color-generic-strong);
+    font-weight: bold;
+} /* Generic.Strong */
+.highlight .gu {
+    color: var(--color-generic-subheading);
+    text-decoration: underline;
+} /* Generic.Subheading */
+.highlight .gt {
+    color: var(--color-generic-traceback);
+} /* Generic.Traceback */
+.highlight .kc {
+    color: var(--color-keyword-constant);
+    font-weight: bold;
+} /* Keyword.Constant */
+.highlight .kd {
+    color: var(--color-keyword-declaration);
+    font-weight: bold;
+} /* Keyword.Declaration */
+.highlight .kn {
+    color: var(--color-keyword-namespace);
+    font-weight: bold;
+} /* Keyword.Namespace */
+.highlight .kp {
+    color: var(--color-keyword-pseudo);
+} /* Keyword.Pseudo */
+.highlight .kr {
+    color: var(--color-keyword-reserved);
+    font-weight: bold;
+} /* Keyword.Reserved */
+.highlight .kt {
+    color: var(--color-keyword-type);
+    font-weight: bold;
+} /* Keyword.Type */
+.highlight .ld {
+    color: var(--color-literal-date);
+} /* Literal.Date */
+.highlight .m {
+    color: var(--color-literal-number);
+} /* Literal.Number */
+.highlight .s {
+    color: var(--color-literal-string);
+} /* Literal.String */
+.highlight .na {
+    color: var(--color-name-attribute);
+} /* Name.Attribute */
+.highlight .nb {
+    color: var(--color-name-builtin);
+} /* Name.Builtin */
+.highlight .nc {
+    color: var(--color-name-class);
+    text-decoration: underline;
+} /* Name.Class */
+.highlight .no {
+    color: var(--color-name-constant);
+} /* Name.Constant */
+.highlight .nd {
+    color: var(--color-name-decorator);
+} /* Name.Decorator */
+.highlight .ni {
+    color: var(--color-name-entity);
+} /* Name.Entity */
+.highlight .ne {
+    color: var(--color-name-exception);
+} /* Name.Exception */
+.highlight .nf {
+    color: var(--color-name-function);
+} /* Name.Function */
+.highlight .nl {
+    color: var(--color-name-label);
+} /* Name.Label */
+.highlight .nn {
+    color: var(--color-name-namespace);
+    text-decoration: underline;
+} /* Name.Namespace */
+.highlight .nx {
+    color: var(--color-name-other);
+} /* Name.Other */
+.highlight .py {
+    color: var(--color-name-property);
+} /* Name.Property */
+.highlight .nt {
+    color: var(--color-name-tag);
+    font-weight: bold;
+} /* Name.Tag */
+.highlight .nv {
+    color: var(--color-name-variable);
+} /* Name.Variable */
+.highlight .ow {
+    color: var(--color-operator-word);
+    font-weight: bold;
+} /* Operator.Word */
+.highlight .w {
+    color: var(--color-text-whitespace);
+} /* Text.Whitespace */
+.highlight .mf {
+    color: var(--color-literal-number-float);
+} /* Literal.Number.Float */
+.highlight .mh {
+    color: var(--color-literal-number-hex);
+} /* Literal.Number.Hex */
+.highlight .mi {
+    color: var(--color-literal-number-integer);
+} /* Literal.Number.Integer */
+.highlight .mo {
+    color: var(--color-literal-number-oct);
+} /* Literal.Number.Oct */
+.highlight .sb {
+    color: var(--color-literal-string-backtick);
+} /* Literal.String.Backtick */
+.highlight .sc {
+    color: var(--color-literal-string-char);
+} /* Literal.String.Char */
+.highlight .sd {
+    color: var(--color-literal-string-doc);
+} /* Literal.String.Doc */
+.highlight .s2 {
+    color: var(--color-literal-string-double);
+} /* Literal.String.Double */
+.highlight .se {
+    color: var(--color-literal-string-escape);
+} /* Literal.String.Escape */
+.highlight .sh {
+    color: var(--color-literal-string-heredoc);
+} /* Literal.String.Heredoc */
+.highlight .si {
+    color: var(--color-literal-string-interpol);
+} /* Literal.String.Interpol */
+.highlight .sx {
+    color: var(--color-literal-string-other);
+} /* Literal.String.Other */
+.highlight .sr {
+    color: var(--color-literal-string-regex);
+} /* Literal.String.Regex */
+.highlight .s1 {
+    color: var(--color-literal-string-single);
+} /* Literal.String.Single */
+.highlight .ss {
+    color: var(--color-literal-string-symbol);
+} /* Literal.String.Symbol */
+.highlight .bp {
+    color: var(--color-builtin-pseudo);
+} /* Name.Builtin.Pseudo */
+.highlight .vc {
+    color: var(--color-variable-class);
+} /* Name.Variable.Class */
+.highlight .vg {
+    color: var(--color-variable-global);
+} /* Name.Variable.Global */
+.highlight .vi {
+    color: var(--color-variable-instance);
+} /* Name.Variable.Instance */
+.highlight .il {
+    color: var(--color-literal-number-integer-long);
+} /* Literal.Number.Integer.Long */
+
+td .gl {
+    padding: 0;
+}
+
+figure.highlight {
+    background-color: var(--color-background);
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.code {
+    max-width: 50vw;
+    overflow-x: auto;
+}

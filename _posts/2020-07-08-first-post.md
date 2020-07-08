@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "The Plan"
+date:   2020-07-08 14:37:00 +0200
+categories: meta
+---
+
+I created this blog with the intention of sharing the things that I've learnt.
+Whenever I try to learn something, I always start by googling it. Unfortunately,
+most of the time, I can't easily understand what I'm reading or watching, and I 
+spend a lot of time deciphering the wording and terminology used by the author,
+on top of having to understand the subject of the article/video/example/etc.
+
+Everyone understands things differently. I want to provide my point of view
+on what I've learnt, using the wording that I would understand, and in the process,
+hopefully deepen my understanding of the subject and provide quality material for
+people to refer to in the future.
