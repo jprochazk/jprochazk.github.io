@@ -79,6 +79,7 @@
         "--color-link",
         "--color-footer-bg",
         "--color-footer-text",
+        "--color-box-shadow",
     ];
 
     if (window.localStorage) {
@@ -88,7 +89,6 @@
         };
         const set = (value) => {
             value = value === "light" ? "light" : "dark";
-            console.log(value);
             let styles = getComputedStyle(root);
             for (const property of properties) {
                 const specific = property.replace(
