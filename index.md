@@ -9,7 +9,7 @@ layout: default
             <li>
                 <span class="post-link">{{ post.title }}</span>
                 {{ post.date | date_to_string: "ordinal", "US" }}
-                <p>{{ post.excerpt | strip_html | truncate: 110, " ... " }}</p>
+                <p>{{ post.excerpt | strip_html | truncate: 120, " ... " }}</p>
             </li>
         </div>
     {% endfor %}
