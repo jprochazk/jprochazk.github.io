@@ -25,10 +25,11 @@
 html {
     color: var(--color-text);
     background-color: var(--color-primary);
+    overflow-x: auto;
 }
 
 pre {
-    background-color: inherit !important;
+    margin-left: 20px !important;
 }
 
 li {
