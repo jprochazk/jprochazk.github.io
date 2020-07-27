@@ -27,6 +27,14 @@ html {
     background-color: var(--color-primary);
 }
 
+pre {
+    background-color: inherit !important;
+}
+
+li {
+    list-style-type: initial !important;
+}
+
 .page-header {
     padding-top: 30px !important;
 }
