@@ -57,25 +57,30 @@ li {
 }
 
 .logo {
-    width: 32px;
-    height: 32px;
-    border-radius: 32px;
+    background-image: url("/assets/img/android-chrome-192x192.png");
+    background-size: contain;
+    width: 64px;
+    height: 64px;
+    border: none;
 }
 @media only screen and (min-width: 666px) {
     .logo {
-        width: 48px !important;
-        height: 48px !important;
-        transition: all 1s;
+        width: 96px;
+        height: 96px;
     }
 }
 @media only screen and (min-width: 999px) {
     .logo {
-        width: 64px !important;
-        height: 64px !important;
+        background-image: url("/assets/img/android-chrome-512x512.png");
+        width: 128px;
+        height: 128px;
     }
 }
-.logo:hover {
-    transform: scale(1.2);
+
+.logo-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 .hoverable:hover {
@@ -110,18 +115,6 @@ span.post-link {
     margin-right: 10px;
 }
 
-a.dark-icon {
-    height: 32px;
-    border: none;
-    border-radius: 64px;
-    background-color: rgb(0, 0, 0, 0);
-    cursor: pointer;
-    transition: all 0.3s;
-}
-a.dark-icon:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 6px 3px rgba(26, 26, 26, 0.678);
-}
 a.light-icon {
     height: 32px;
     border: none;
@@ -139,7 +132,28 @@ div.navbar {
     justify-content: space-evenly !important;
 }
 
-a.navbar-button {
-    margin-left: 10px;
-    margin-right: 10px;
+.center-align {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-btn {
+    padding: 12px;
+    font-size: 32px;
+}
+
+.panel {
+    padding: 15px;
+    margin: 15px;
+    margin-left: inherit !important;
+    height: 30px;
+}
+
+.remove-text-transform {
+    text-transform: initial !important;
+}
+
+.list-container {
+    width: 30vw;
 }

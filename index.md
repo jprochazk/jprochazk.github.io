@@ -1,17 +1,19 @@
 ---
-layout: default
+layout: main
 ---
 
-<div class="container">
-    <ul>
-    {% for post in site.posts %}
-        <div class="link" data-target="{{ post.url }}">
-            <li>
-                <span class="post-link">{{ post.title }}</span>
-                {{ post.date | date_to_string: "ordinal", "US" }}
-                <p>{{ post.excerpt | strip_html | truncate: 120, " ... " }}</p>
-            </li>
-        </div>
-    {% endfor %}
-    </ul>
+
+<div class="container logo-container">
+    <div class="row valign-wrapper">
+        <a href="https://github.com/jprochazk"><img class="logo"/></a>
+    </div>
+</div>
+<div class="container list-container">
+    <div class="row center-align">
+        <a class="waves-effect waves-teal btn-flat remove-text-transform" href="https://github.com/jprochazk/uecs">μECS</a>
+        <a class="waves-effect waves-teal btn-flat remove-text-transform" href="https://github.com/EverCrawl/packetc">packetc</a>
+        <a class="waves-effect waves-teal btn-flat remove-text-transform" href="https://github.com/jprochazk/cbor">CBOR</a>
+        <a class="waves-effect waves-teal btn-flat remove-text-transform" href="https://github.com/jprochazk/tedit">TEdit</a>
+        <a class="waves-effect waves-teal btn-flat remove-text-transform" href="https://github.com/EverCrawl/game">2D Game</a>
+    </div>
 </div>
