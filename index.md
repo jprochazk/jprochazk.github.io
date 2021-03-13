@@ -14,6 +14,7 @@ layout: main
         <a class="waves-effect waves-teal btn-flat remove-text-transform" href="https://github.com/EverCrawl/packetc">packetc</a>
         <a class="waves-effect waves-teal btn-flat remove-text-transform" href="https://github.com/jprochazk/cbor">CBOR</a>
         <a class="waves-effect waves-teal btn-flat remove-text-transform" href="https://github.com/jprochazk/tedit">TEdit</a>
-        <a class="waves-effect waves-teal btn-flat remove-text-transform" href="https://github.com/EverCrawl/game">2D Game</a>
+        <a class="waves-effect waves-teal btn-flat remove-text-transform" href="https://github.com/EverCrawl/game">game (repo)</a>
+        <a class="waves-effect waves-teal btn-flat remove-text-transform" href="http://game.jan-prochazka.eu/">game (live)</a>
     </div>
 </div>
