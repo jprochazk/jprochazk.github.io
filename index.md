@@ -8,8 +8,8 @@ layout: main
         <a href="https://github.com/jprochazk"><img class="logo"/></a>
     </div>
 </div>
-<div class="container list-container">
-    <div class="row center-align">
+<div class="container list-container center-align">
+    <div class="row">
         <a class="waves-effect waves-teal btn-flat remove-text-transform" href="https://github.com/jprochazk/uecs">μECS</a>
         <a class="waves-effect waves-teal btn-flat remove-text-transform" href="https://github.com/EverCrawl/packetc">packetc</a>
         <a class="waves-effect waves-teal btn-flat remove-text-transform" href="https://github.com/jprochazk/cbor">CBOR</a>
