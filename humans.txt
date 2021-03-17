@@ -1,10 +1,11 @@
 /* TEAM */
-Programmer, Designer: Jan Procházka
-Site: honza.spacir@gmail.com
+Designer: Jan Procházka
+Site: https://jan-prochazka.eu/
 Location: Czechia
 
 /* SITE */
-Last update: 2021/03/13
-Standards: HTML5, ES6, CSS3
-Languages: HTML, Markdown, CSS, JavaScript, Liquid
-Software: Jekyll, Github Pages, Visual Studio Code
+Last update: 2021/03/17
+Standards: HTML5, CSS3
+Languages: HTML, CSS
+Software: Github Pages, Visual Studio Code
+Libraries: Materialize
