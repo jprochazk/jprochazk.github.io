@@ -3,6 +3,10 @@
     overflow-x: auto;
 }
 
+body {
+    font-family: "Poppins", sans-serif;
+}
+
 .page-main {
     position: absolute;
     transform: translateX(-50%) translateY(-50%);
