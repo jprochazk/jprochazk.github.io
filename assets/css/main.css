@@ -42,7 +42,8 @@ body {
     border: none;
     transition: transform 0.2s ease-in-out;
 }
-.logo:hover {
+.logo:hover,
+.logo:active {
     transform: scale(0.9);
 }
 
@@ -95,7 +96,8 @@ div.navbar {
     background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.2s ease-in-out;
 }
-.hover-shadow:hover {
+.hover-shadow:hover,
+.hover-shadow:active {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
