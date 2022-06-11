@@ -4,8 +4,7 @@ Site: https://jan-prochazka.eu/
 Location: Czechia
 
 /* SITE */
-Last update: 2021/03/26
-Standards: HTML5, CSS3
-Languages: HTML, CSS
+Last update: 2022/06/11
+Standards: HTML5, CSS3, ES6, W3C
+Languages: HTML, CSS, JS
 Software: Github Pages, Visual Studio Code
-Libraries: Materialize

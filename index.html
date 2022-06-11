@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <!-- This website uses no JS, and doesn't track you. -->
-        <!-- Responsive layout -->
-        <meta charset="utf-8"/>
-        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-        <!-- Author -->
-        <title>Jan Procházka</title>
-        <link href="humans.txt" rel="author"/>
-        <!-- Favicon -->
-        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
-        <link href="assets/img/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-        <link href="assets/img/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-        <link href="site.webmanifest" rel="manifest"/>
-        <!-- Stylesheets -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-        <link href="assets/css/main.css" rel="stylesheet" type="text/css"/>
-    </head>
-    <body>
-        <main class="page-main">
-            <div class="container logo-container">
-                <div class="row valign-wrapper">
-                    <a href="https://github.com/jprochazk"><img class="logo"/></a>
-                </div>
-            </div>
-            <div class="container">
-                <a class="btn flat hover-shadow" href="https://github.com/jprochazk">GitHub</a>
-            </div>
-        </main>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+    <!-- Author -->
+    <title>Jan Procházka</title>
+    <link href="humans.txt" rel="author" />
+    <!-- Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Stylesheets -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+    <!-- No tracking :) -->
+  </head>
+  <body>
+    <div class="container column center">
+      <div class="container row center" id="donut-container">
+        <img class="logo" src="/assets/img/512.png" width="256px" height="256px" />
+      </div>
+      <div class="container row center">
+        <a class="btn flat hover-shadow" href="https://github.com/jprochazk">GitHub</a>
+        <span class="pointer-events-none user-select-none">|</span>
+        <a class="btn flat hover-shadow" href="https://blog.jan-prochazka.eu/">Blog</a>
+      </div>
+    </div>
+    <script type="module" src="/assets/js/index.js" type="application/javascript"></script>
+  </body>
 </html>
